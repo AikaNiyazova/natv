@@ -3,6 +3,8 @@ package kg.magalab.natv.model.response;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.math.BigDecimal;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -12,7 +14,7 @@ public class GetChannelsResponse {
 
     String channelName;
     String imageSource;
-    String pricePerSymbol;
-    String percent;
+    BigDecimal pricePerSymbol;
+    Integer percent;
 
 }
